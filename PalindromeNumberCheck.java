@@ -1,33 +1,22 @@
-public class PalindromeNumberCheck {
-    public static boolean isPalindrome(int num) {
-        
-        int originalNum = num; 
-        int reverse = 0;
-
-       
-        while (num != 0) {
-            int lastDigit = num % 10; 
-            reverse = reverse * 10 + lastDigit; 
-            num /= 10; 
-        }
-
-       
-        return originalNum == reverse; 
-    }
-
-    public static void main(String[] args) {
-        int number = 12321;
-        if (isPalindrome(number)) {
-            System.out.println(number + " is a palindrome number.");
-        } else {
-            System.out.println(number + " is not a palindrome number.");
-        }
-        
-        int number2 = 123;
-        if (isPalindrome(number2)) {
-             System.out.println(number2 + " is a palindrome number.");
-        } else {
-             System.out.println(number2 + " is not a palindrome number.");
-        }
-    }
+public class PalindromeNumberCheck
+{
+public static void main(String[] args)
+{
+int n=121,pal,r,rev=0;
+pal = n;
+while (n > 0)
+{
+r = n % 10;
+rev = rev * 10 + r;
+n = n / 10;
+}
+if (rev == pal)
+{
+System.out.println(" The given no is palindrome "+ rev);
+}
+else
+{
+System.out.println("The given no is not palindrome " + rev);
+}
+}
 }
