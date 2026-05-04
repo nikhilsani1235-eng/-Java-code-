@@ -1,4 +1,3 @@
-
 class CompoundIntrest
 {
     public static void main(String args[])
