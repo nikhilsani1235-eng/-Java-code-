@@ -7,8 +7,9 @@ import java.util.Scanner;
 
  int i, j, t;
  System.out.println("How many row you want ");
- Scanner sc = new Scanner(System.in);
- t = sc.nextInt();
+ try (Scanner sc = new Scanner(System.in)) {
+    t = sc.nextInt();
+}
  for (j = 0; j < t; j++)
  {
  for (i = t - 1; i >= j; i--)
