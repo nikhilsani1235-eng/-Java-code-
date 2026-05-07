@@ -4,9 +4,10 @@ public class PatternNumberPyramidRev
 public static void main(String args[])
 {
 int i, j, k, n, a;
-Scanner sc = new Scanner(System.in);
-System.out.println("Enter the n values");
-n = sc.nextInt();
+try (Scanner sc = new Scanner(System.in)) {
+    System.out.println("Enter the n values");
+    n = sc.nextInt();
+}
 a = n;
 for (i = 1; i <= n; i++)
 {
