@@ -1,14 +1,21 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 
-public class Geeks {
-    public static void main(String[] args) throws IOException {
+class Geeks 
+{
+    // Main driver method
+    public static void main(String[] args)
+    {
+        // Initializing a character
+        char num = '3';
 
-        BufferedReader r = new BufferedReader(
-            new InputStreamReader(System.in));
+        // Printing the character value
+        System.out.println("char value: " + num);
 
-        String s = r.readLine();
-        System.out.println(s);
+
+        // Converting character to its integer value
+        int n = num - '0';
+        
+
+        // Printing the integer value
+        System.out.println("int value: " + n);
     }
 }
