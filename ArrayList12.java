@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class ArrayList
+public class ArrayList12
 
 
 {
