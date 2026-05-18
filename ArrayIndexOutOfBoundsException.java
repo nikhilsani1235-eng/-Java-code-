@@ -1,7 +1,6 @@
-// Java Program to Handle the exception hierarchies
-import java.io.*;
 
-class ArrayIndexOutOfBoundsException {
+
+class GFG {
     public static void main(String[] args)
     {
         int a[] = { 1, 2, 3, 4, 5 };
